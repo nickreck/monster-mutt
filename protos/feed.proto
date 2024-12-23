@@ -1,0 +1,9 @@
+import "google/protobuf/empty.proto";
+
+package protos;
+
+option go_package = "../monster-mutt";
+
+service MonsterMutt {
+  rpc FeedLetty(google.protobuf.Empty) returns (google.protobuf.Empty) {}
+}
